@@ -45,7 +45,7 @@ var Module = function (bot) {
         passArray[i] = password;
       }
     }
-    var passwords;
+    var passwords = "";
     for (i = 0; i < passArray.length; i++){
       passwords += "\n " + passArray[i];
     }
