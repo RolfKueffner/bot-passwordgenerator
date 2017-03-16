@@ -60,9 +60,7 @@ var Module = function (bot) {
       passwords += "\n " + passArray[i];
     }
     response = passwords;
-    setTimeout(function() {
       bot.postMessage(channel, response);
-    }, 500);
   };
 
 };
