@@ -19,10 +19,10 @@ var Module = function (bot) {
     var passArray = [];
     var response;
     var length = 10;
-    var anz = 5;
+    var anzahl = 5;
 
     if(typeof splittedText[0] == "number"){
-      anz = splittedText[0];
+      anzahl = splittedText[0];
     }
     if (typeof splittedText[1] == "number"){
       length = splittedText[1];
@@ -30,7 +30,7 @@ var Module = function (bot) {
     if (splittedText[2] && splittedText[2].toUpperCase() === "S"){
       for (i = 0; i <= anzahl - 1; i++) {
         var password = "";
-        for (j = 1; j <= laenge; j++) {
+        for (j = 1; j <= length; j++) {
           password += possibleInputS.charAt(Math.floor(Math.random() * possibleInputS.length));
         }
         passArray[i] = password;
@@ -39,7 +39,7 @@ var Module = function (bot) {
     else{
       for (i = 0; i <= anzahl - 1; i++) {
         var password = "";
-        for (j = 1; j <= laenge; j++) {
+        for (j = 1; j <= length; j++) {
           password += possibleInput.charAt(Math.floor(Math.random() * possibleInput.length));
         }
         passArray[i] = password;
