@@ -1,18 +1,22 @@
+var package = require('./package.json');
 var _ = require('lodash');
 
 var Module = function (bot) {
   this.bot = bot;
-  this.name = "Example Library";
-  this.version = "0.1";
+  this.name = package.name;
+  this.version = package.version;
+  // add channel names as trings to only allow certain channels
+  this.allowedChannels = [];
   this.help = function () {
     // RETURN HELP STRING FOR YOUR COMMANDS or AT LEAST YOUR COMMANDS Object.keys(this.commands)
-    return {
-      "generatepassword": "Generates 5 random strings with a length of 10 without special characters by default. Usage: 'generatepassword number length optional s' s = special characters",
-    };
+    // For basic help add them to the package
+    // This funciton can be used to generate a dynamic help, it is called at !help
+    return package.commands;
   };
   this.commands = {};
 
-  this.commands.generatepassword = function(channel, args, user) {
+  this.commands.example = function(channel, args, user) {
+
     var splittedText = args.split(" ");
     var possibleInput = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
     var possibleInputS = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!()[]{}.<>@#$%=&/?ß§";
@@ -20,7 +24,6 @@ var Module = function (bot) {
     var response;
     var length = 10;
     var anzahl = 5;
-    var test = "test";
 
     if(typeof splittedText[0] == "number"){
       anzahl = splittedText[0];
@@ -51,7 +54,7 @@ var Module = function (bot) {
       passwords += "\n " + passArray[i];
     }
     response = passwords;
-      bot.postMessage(channel, response);
+    bot.postMessage(channel, response);
   };
 
 };
