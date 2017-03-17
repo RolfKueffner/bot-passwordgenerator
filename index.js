@@ -15,7 +15,7 @@ var Module = function (bot) {
   };
   this.commands = {};
 
-  this.commands.example = function(channel, args, user) {
+  this.commands.generatepassword = function(channel, args, user) {
 
     var splittedText = args.split(" ");
     var possibleInput = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
