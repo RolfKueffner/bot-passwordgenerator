@@ -8,10 +8,9 @@ var Module = function (bot) {
   // add channel names as trings to only allow certain channels
   this.allowedChannels = [];
   this.help = function () {
-    // RETURN HELP STRING FOR YOUR COMMANDS or AT LEAST YOUR COMMANDS Object.keys(this.commands)
-    // For basic help add them to the package
-    // This funciton can be used to generate a dynamic help, it is called at !help
-    return package.commands;
+    return {
+      "generatepassword": "Generate passwords",
+    };
   };
   this.commands = {};
 
