@@ -57,6 +57,9 @@
   "bugs": {
     "url": "https://github.com/contactimpact/bot-passwordgenerator/issues"
   },
+  "commands": {
+    "generatepassword": "generates passwords"
+  },
   "dependencies": {
     "lodash": "^4.17.4"
   },
