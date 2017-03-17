@@ -10,6 +10,7 @@ var Module = function (bot) {
   this.help = function () {
     return {
       "generatepassword": "Generate passwords"
+
     };
   };
   this.commands = {};
@@ -24,10 +25,10 @@ var Module = function (bot) {
     var length = 10;
     var anzahl = 5;
 
-    if(typeof splittedText[0] == "number"){
+    if(splittedText[0] && splittedText[0].length != 0){
       anzahl = splittedText[0];
     }
-    if (typeof splittedText[1] == "number"){
+    if (splittedText[0] && splittedText[0].length != 0){
       length = splittedText[1];
     }
     if (splittedText[2] && splittedText[2].toUpperCase() === "S"){
