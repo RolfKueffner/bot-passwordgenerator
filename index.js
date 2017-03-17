@@ -20,6 +20,7 @@ var Module = function (bot) {
     var response;
     var length = 10;
     var anzahl = 5;
+    var test = "test";
 
     if(typeof splittedText[0] == "number"){
       anzahl = splittedText[0];
