@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/contactimpact/bot-example.git"
+    "url": "git+https://github.com/RolfKueffner/bot-passwordgenerator.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/contactimpact/bot-example/issues"
+    "url": "https://github.com/RolfKueffner/bot-passwordgenerator/issues"
   },
-  "homepage": "https://github.com/contactimpact/bot-example#readme",
+  "homepage": "https://github.com/RolfKueffner/bot-passwordgenerator#readme",
   "dependencies": {
     "lodash": "^4.17.4"
   }
