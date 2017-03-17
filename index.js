@@ -56,7 +56,6 @@ var Module = function (bot) {
     response = passwords;
     bot.postMessage(channel, response);
   };
-
 };
 
 Module.prototype.toString = function() {
