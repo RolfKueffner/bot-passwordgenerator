@@ -9,7 +9,7 @@ var Module = function (bot) {
   this.allowedChannels = [];
   this.help = function () {
     return {
-      "generatepassword": "Generate passwords",
+      "generatepassword": "Generate passwords"
     };
   };
   this.commands = {};
