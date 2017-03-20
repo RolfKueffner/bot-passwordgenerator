@@ -71,7 +71,7 @@
   "main": "index.js",
   "name": "bot-passwordgenerator",
   "optionalDependencies": {},
-  "readme": "# Bot Example Plugin\r\n\r\nSee code, its izi.",
+  "readme": "# Bot Example Plugin\r\n\r\n",
   "readmeFilename": "README.md",
   "repository": {
     "type": "git",
