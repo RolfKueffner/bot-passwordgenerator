@@ -63,7 +63,7 @@
   "dependencies": {
     "lodash": "^4.17.4"
   },
-  "description": "See code, its izi.",
+  "description": "",
   "devDependencies": {},
   "gitHead": "0a8b2a1378f5e6e9dba27566d5109cda46521b9c",
   "homepage": "https://github.com/RolfKueffner/bot-passwordgenerator#readme",
